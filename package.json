@@ -6,7 +6,7 @@
     "dev": "HOT=true webpack-dev-server",
     "build": "webpack",
     "watch": "webpack --progress --watch",
-    "serve": "serve --single --no-clipboard dist",
+    "serve": "serve --single dist",
     "start": "concurrently 'npm run watch' 'npm run serve'"
   },
   "author": "Matt Miller <me@mmiller.me> (https://mmiller.me/)",
