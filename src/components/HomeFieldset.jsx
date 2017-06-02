@@ -68,7 +68,7 @@ export default function HomeFieldset({ state, setValue }) {
 						<Field
 							value={state.homePropertyTaxRate}
 							setValue={value => setValue('homePropertyTaxRate', value)}
-							suffix="%"
+							suffix="%/year"
 						/>
 					</Row>
 					<Row

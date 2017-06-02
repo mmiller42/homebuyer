@@ -27,6 +27,10 @@ tbody tr:nth-child(2n) {
 	background: #eeeeee;
 }
 
+tbody td {
+	height: 1.625rem;
+}
+
 th,
 td {
 	vertical-align: top;
