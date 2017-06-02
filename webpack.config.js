@@ -1,10 +1,14 @@
 const path = require('path');
+const childProcess = require('child_process');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+
+const output = childProcess.execSync('git remote show origin -n', { encoding: 'utf8' });
+const repoName = output.match(/Fetch URL: (.*)\/(.*?)\.git/)[2];
 
 const ENV = process.env.NODE_ENV;
 const HOT = Boolean(process.env.HOT);
@@ -25,7 +29,7 @@ const config = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/',
+		publicPath: ENV === 'development' ? '/' : '/' + repoName,
 		filename: '[name].[hash].js'
 	},
 	externals: {

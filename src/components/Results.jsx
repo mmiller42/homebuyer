@@ -41,8 +41,8 @@ export default function Results({ state }) {
 			<table>
 				<thead>
 					<tr>
-						<th colSpan="2">Rent Cost</th>
-						<th colSpan="2">Home Cost</th>
+						<th colSpan="2">Rent Cost/mo</th>
+						<th colSpan="2">Home Cost/mo</th>
 					</tr>
 				</thead>
 				<tbody>
