@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+form {
+	display: flex;
+}
+
+fieldset {
+	flex: 1 1 auto;
+}
+
+fieldset legend {
+	padding: 0 0.25rem;
+	font-size: 1.25rem;
+}
+
+table {
+	table-layout: fixed;
+}
+
+tbody tr:nth-child(2n) {
+	background: #eeeeee;
+}
+
+th,
+td {
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+}
+
+thead th,
+tfoot th {
+	font-size: 1.25rem;
+}
+
+.field {
+	width: 9rem;
+}
+
+.value,
+input {
+	font: 1rem Consolas, monospace;
+	text-align: right;
+}
+
+input {
+	width: 5rem;
+}
+
+.preview {
+	font-style: italic;
+	color: #444444;
+}
+
+.description {
+	font-size: 0.875rem;
+	color: #444444;
+}
+
+.results {
+	margin: 1rem;
+}
+
+.results table {
+	margin: 0 auto;
+}
+
+.large {
+	font-size: 1.25rem;
+}
