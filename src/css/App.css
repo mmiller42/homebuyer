@@ -50,6 +50,7 @@ tfoot th {
 }
 
 .value,
+.preview,
 input {
 	font: 1rem Consolas, monospace;
 	text-align: right;
@@ -61,7 +62,7 @@ input {
 
 .preview {
 	font-style: italic;
-	color: #444444;
+	color: #666666;
 }
 
 .description {

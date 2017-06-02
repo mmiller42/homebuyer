@@ -28,8 +28,7 @@ export default class App extends PureComponent {
 			homeWater: 50,
 			homeGas: 50,
 			homeSewageTrash: 20,
-			homeOtherExpenses: 100,
-			homeAppreciationRate: 3
+			homeOtherExpenses: 100
 		}, JSON.parse(window.localStorage.getItem('homebuyer')) || {});
 
 		this.setValue = this.setValue.bind(this);

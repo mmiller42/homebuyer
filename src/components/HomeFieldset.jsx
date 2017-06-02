@@ -159,16 +159,6 @@ export default function HomeFieldset({ state, setValue }) {
 							suffix="/mo"
 						/>
 					</Row>
-					<Row
-						label="Appreciation Rate"
-						description="Estimated percentage of home appreciation, per year. This varies a lot by neighborhood, so be sure to research."
-					>
-						<Field
-							value={state.homeAppreciationRate}
-							setValue={value => setValue('homeAppreciationRate', value)}
-							suffix="%/year"
-						/>
-					</Row>
 				</tbody>
 			</table>
 		</fieldset>
